@@ -11,7 +11,7 @@ import SwiftUI
 struct ToggleModel {
     var isWifiOpen: Bool = false {
         willSet {
-            print("wifi status will change")
+            print("wifi \(isWifiOpen)")
         }
     }
 }
@@ -28,7 +28,6 @@ struct SampleToggle: View {
         }
         .padding()
     }
-
 }
 
 struct SampleToggle_Previews: PreviewProvider {

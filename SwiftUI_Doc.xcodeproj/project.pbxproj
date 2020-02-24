@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		1665E3682403A296007AF996 /* SampleToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1665E3672403A296007AF996 /* SampleToggle.swift */; };
+		1665E36B2403B6DD007AF996 /* LikeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1665E36A2403B6DD007AF996 /* LikeViewModel.swift */; };
+		1665E36D2403B7EF007AF996 /* LikeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1665E36C2403B7EF007AF996 /* LikeView.swift */; };
+		1665E36F2403BD56007AF996 /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1665E36E2403BD56007AF996 /* UserSettings.swift */; };
+		1665E3712403BF04007AF996 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1665E3702403BF04007AF996 /* TestView.swift */; };
 		16FCA33124035CF10036F732 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FCA33024035CF10036F732 /* AppDelegate.swift */; };
 		16FCA33324035CF10036F732 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FCA33224035CF10036F732 /* SceneDelegate.swift */; };
 		16FCA33524035CF10036F732 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FCA33424035CF10036F732 /* ContentView.swift */; };
@@ -41,6 +45,10 @@
 
 /* Begin PBXFileReference section */
 		1665E3672403A296007AF996 /* SampleToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleToggle.swift; sourceTree = "<group>"; };
+		1665E36A2403B6DD007AF996 /* LikeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeViewModel.swift; sourceTree = "<group>"; };
+		1665E36C2403B7EF007AF996 /* LikeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeView.swift; sourceTree = "<group>"; };
+		1665E36E2403BD56007AF996 /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
+		1665E3702403BF04007AF996 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		16FCA32D24035CF10036F732 /* SwiftUI_Doc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUI_Doc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16FCA33024035CF10036F732 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		16FCA33224035CF10036F732 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -95,6 +103,17 @@
 			path = 3;
 			sourceTree = "<group>";
 		};
+		1665E3692403B6AB007AF996 /* 4_ObservableObject */ = {
+			isa = PBXGroup;
+			children = (
+				1665E36A2403B6DD007AF996 /* LikeViewModel.swift */,
+				1665E36C2403B7EF007AF996 /* LikeView.swift */,
+				1665E36E2403BD56007AF996 /* UserSettings.swift */,
+				1665E3702403BF04007AF996 /* TestView.swift */,
+			);
+			path = 4_ObservableObject;
+			sourceTree = "<group>";
+		};
 		16FCA32424035CF10036F732 = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +143,7 @@
 				16FCA363240370F70036F732 /* 1 */,
 				16FCA364240371090036F732 /* 2 */,
 				1665E36624038A2B007AF996 /* 3 */,
+				1665E3692403B6AB007AF996 /* 4_ObservableObject */,
 				16FCA33624035CF30036F732 /* Assets.xcassets */,
 				16FCA33B24035CF30036F732 /* LaunchScreen.storyboard */,
 				16FCA33E24035CF30036F732 /* Info.plist */,
@@ -310,12 +330,16 @@
 			files = (
 				16FCA36A240381F80036F732 /* BikeDetail.swift in Sources */,
 				1665E3682403A296007AF996 /* SampleToggle.swift in Sources */,
+				1665E36B2403B6DD007AF996 /* LikeViewModel.swift in Sources */,
 				16FCA3662403735C0036F732 /* BikeModel.swift in Sources */,
+				1665E3712403BF04007AF996 /* TestView.swift in Sources */,
 				16FCA36824037BA30036F732 /* BikeItem.swift in Sources */,
 				16FCA362240370CD0036F732 /* SampleView.swift in Sources */,
 				16FCA33124035CF10036F732 /* AppDelegate.swift in Sources */,
+				1665E36D2403B7EF007AF996 /* LikeView.swift in Sources */,
 				16FCA33324035CF10036F732 /* SceneDelegate.swift in Sources */,
 				16FCA33524035CF10036F732 /* ContentView.swift in Sources */,
+				1665E36F2403BD56007AF996 /* UserSettings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

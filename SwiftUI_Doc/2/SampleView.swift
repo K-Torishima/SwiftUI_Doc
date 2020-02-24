@@ -13,7 +13,7 @@ struct SampleView: View {
     var body: some View {
         
         NavigationView {
-            List(bikes) {bike in
+            List(bikes) { bike in
                 NavigationLink(destination: BikeDetail(bike: bike)) {
                     BikeItem(bike: bike)
                 }
