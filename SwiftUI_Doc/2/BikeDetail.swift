@@ -13,20 +13,24 @@ struct BikeDetail: View {
     var body: some View {
         VStack {
             ZStack(alignment: .bottomTrailing) {
-                Image(bike.imageName)
-                    .resizable()
-                    .frame(height: 300)
+                Form {
+                    Section(header: Text("画像")) {
+                        Image(bike.imageName)
+                            .resizable()
+                            .frame(height: 500)
+                            .scaledToFit()
+                    }
+                    
+                    Section(header: Text("タイプ")) {
+                        Text(bike.type)
+                    }
+                    
+                    Section(header: Text("概要")) {
+                        Text(bike.description)
+                    }
+                }
             }
             
-            Form {
-                Section(header: Text("タイプ")) {
-                    Text(bike.type)
-                }
-                
-                Section(header: Text("概要")) {
-                    Text(bike.description)
-                }
-            }
         }
         .navigationBarTitle(Text(bike.bikeName), displayMode: .inline)
     }
@@ -34,7 +38,7 @@ struct BikeDetail: View {
 
 struct BikeDetail_Previews: PreviewProvider {
     static var previews: some View {
-           Group {
+        Group {
             NavigationView {
                 BikeDetail(bike: bikes[0])
             }
