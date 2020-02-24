@@ -9,13 +9,22 @@
 import SwiftUI
 
 struct SampleView: View {
+    var bikes: [Bike]
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        NavigationView {
+            List(bikes) {bike in
+                NavigationLink(destination: BikeDetail(bike: bike)) {
+                    BikeItem(bike: bike)
+                }
+            }
+        .navigationBarTitle("BikeList")
+        }
     }
 }
 
 struct SampleView_Previews: PreviewProvider {
     static var previews: some View {
-        SampleView()
+        SampleView(bikes: bikes)
     }
 }
