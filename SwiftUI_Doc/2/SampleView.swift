@@ -25,6 +25,13 @@ struct SampleView: View {
 
 struct SampleView_Previews: PreviewProvider {
     static var previews: some View {
-        SampleView(bikes: bikes)
+        Group {
+            SampleView(bikes: bikes)
+                .environment(\.colorScheme,.dark)
+                .previewDevice(.init(rawValue: "iPhone SE"))
+            SampleView(bikes: bikes)
+                .environment(\.colorScheme,.light)
+        }
+       
     }
 }
