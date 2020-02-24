@@ -10,21 +10,22 @@ import SwiftUI
 
 struct TestView: View {
     @EnvironmentObject var settings: UserSettings
+    var bikes: [Bike]
     var body: some View {
         NavigationView {
+            
             Form {
-                NavigationLink(destination: ToggleView()) {
-                    Text("ToggleView")
-                }
                 
-                NavigationLink(destination: LikeView(viewModel: LikeViewModel())) {
-                    Text("LikeView")
+                List(bikes) { bike in
+                    NavigationLink(destination: BikeDetail(bike: bike)) {
+                        BikeItem(bike: bike)
+                    }
                 }
-                
                 NavigationLink(destination: SettingView()) {
                     Text("Setting Theme Color")
                 }
             }
+                
             .navigationBarTitle("State and Data Flow", displayMode: .inline)
             .foregroundColor(Color(settings.color))
         }
@@ -33,6 +34,15 @@ struct TestView: View {
 
 struct TestVIew_Previews: PreviewProvider {
     static var previews: some View {
-        TestView().environmentObject(UserSettings())
+        TestView(bikes: bikes).environmentObject(UserSettings())
     }
 }
+
+
+//                NavigationLink(destination: ToggleView()) {
+//                    Text("ToggleView")
+//                }
+//
+//                NavigationLink(destination: LikeView(viewModel: LikeViewModel())) {
+//                    Text("LikeView")
+//                }

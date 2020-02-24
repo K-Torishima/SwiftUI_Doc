@@ -21,7 +21,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // let contentView = SampleToggle()
         // let contentView = LikeView(viewModel: LikeViewModel())
         
-        let contentView = TestView().environmentObject(settings)
+        let contentView = TestView(bikes: bikes).environmentObject(settings)
         
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
