@@ -8,6 +8,7 @@
 
 import SwiftUI
 
+
 struct ContentView: View {
     var body: some View {
         List(0 ..< 5) { item in
@@ -22,7 +23,30 @@ struct Cell:View {
         HStack {
             Image(systemName: "star.fill")
             Text("swiftUI")
+            ToggleView()
             Spacer()
+        }
+    }
+}
+
+struct ToggleView: View {
+    @State var isON: Bool = false
+    var body: some View {
+        HStack {
+            Button(action:{
+                print("Button Tapped")
+            }) {
+                Text("Button")
+                    .background(Color.blue)
+            }
+            Toggle(isOn: $isON ) {
+                Text("Switch")
+                    if isON {
+                        Text("tap to Off")
+                    } else {
+                        Text("tap to ON")
+                }
+            }
         }
     }
 }
