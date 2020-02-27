@@ -26,13 +26,13 @@ struct BikeItem: View {
     }
 }
 
-//struct BikeItem_Previews: PreviewProvider {
-//    static var previews: some View {
-//        ForEach(ContentSizeCategory.allCases, id: \.self) { category in
-//            BikeItem(bike: bikes[5])
-//                .previewLayout(.sizeThatFits)
-//                .environment(\.sizeCategory, category)
-//            .previewDisplayName("\(category)")
-//        }
-//    }
-//}
+struct BikeItem_Previews: PreviewProvider {
+    static var previews: some View {
+        ForEach(ContentSizeCategory.allCases, id: \.self) { category in
+            BikeItem(bike: bikes[5])
+                .previewLayout(.sizeThatFits)
+                .environment(\.sizeCategory, category)
+            .previewDisplayName("\(category)")
+        }
+    }
+}
