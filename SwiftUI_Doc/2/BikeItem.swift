@@ -19,7 +19,7 @@ struct BikeItem: View {
             
             Text(bike.maker)
                 .font(.title)
-                .fontWeight(.bold)
+                .fontWeight(.medium)
             
             Spacer()
         }
