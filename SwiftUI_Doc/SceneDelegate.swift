@@ -17,12 +17,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
        
-        let contentView = SampleView(bikes: bikes)
+       //  let contentView = SampleView(bikes: bikes)
         // let contentView = SampleToggle()
         // let contentView = LikeView(viewModel: LikeViewModel())
         
 //        let contentView = TestView(bikes: bikes).environmentObject(settings)
-        
+       let contentView = TestSampleView() 
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
             window.rootViewController = UIHostingController(rootView: contentView)
