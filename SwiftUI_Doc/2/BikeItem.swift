@@ -8,6 +8,7 @@
 
 import SwiftUI
 
+// cell
 struct BikeItem: View {
     var bike: Bike
     var body: some View {

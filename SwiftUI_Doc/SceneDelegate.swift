@@ -22,7 +22,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // let contentView = LikeView(viewModel: LikeViewModel())
         
 //        let contentView = TestView(bikes: bikes).environmentObject(settings)
-       let contentView = TestSampleView() 
+        let contentView = TestSampleView(motos: motos)
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
             window.rootViewController = UIHostingController(rootView: contentView)
