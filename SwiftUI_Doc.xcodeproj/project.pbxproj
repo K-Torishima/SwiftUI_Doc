@@ -16,6 +16,8 @@
 		167440122407F2B800DB643F /* TestSampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167440112407F2B800DB643F /* TestSampleView.swift */; };
 		16744016240A32E800DB643F /* BoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16744015240A32E800DB643F /* BoxView.swift */; };
 		16744018240A4E4200DB643F /* Deteil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16744017240A4E4200DB643F /* Deteil.swift */; };
+		1674401C240B7F4700DB643F /* ContentSampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1674401B240B7F4700DB643F /* ContentSampleView.swift */; };
+		16744020240B90A500DB643F /* ColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1674401F240B90A500DB643F /* ColorView.swift */; };
 		16FCA33124035CF10036F732 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FCA33024035CF10036F732 /* AppDelegate.swift */; };
 		16FCA33324035CF10036F732 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FCA33224035CF10036F732 /* SceneDelegate.swift */; };
 		16FCA33524035CF10036F732 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FCA33424035CF10036F732 /* ContentView.swift */; };
@@ -57,6 +59,8 @@
 		167440112407F2B800DB643F /* TestSampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSampleView.swift; sourceTree = "<group>"; };
 		16744015240A32E800DB643F /* BoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxView.swift; sourceTree = "<group>"; };
 		16744017240A4E4200DB643F /* Deteil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deteil.swift; sourceTree = "<group>"; };
+		1674401B240B7F4700DB643F /* ContentSampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentSampleView.swift; sourceTree = "<group>"; };
+		1674401F240B90A500DB643F /* ColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorView.swift; sourceTree = "<group>"; };
 		16FCA32D24035CF10036F732 /* SwiftUI_Doc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUI_Doc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16FCA33024035CF10036F732 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		16FCA33224035CF10036F732 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -137,6 +141,8 @@
 		16744019240B7F0600DB643F /* 6 */ = {
 			isa = PBXGroup;
 			children = (
+				1674401B240B7F4700DB643F /* ContentSampleView.swift */,
+				1674401F240B90A500DB643F /* ColorView.swift */,
 			);
 			path = 6;
 			sourceTree = "<group>";
@@ -363,6 +369,7 @@
 				16FCA3662403735C0036F732 /* BikeModel.swift in Sources */,
 				1665E3712403BF04007AF996 /* TestView.swift in Sources */,
 				167440122407F2B800DB643F /* TestSampleView.swift in Sources */,
+				16744020240B90A500DB643F /* ColorView.swift in Sources */,
 				16FCA36824037BA30036F732 /* BikeItem.swift in Sources */,
 				16FCA362240370CD0036F732 /* SampleView.swift in Sources */,
 				16FCA33124035CF10036F732 /* AppDelegate.swift in Sources */,
@@ -370,6 +377,7 @@
 				1665E3732403C64E007AF996 /* SettingView.swift in Sources */,
 				1665E36D2403B7EF007AF996 /* LikeView.swift in Sources */,
 				16FCA33324035CF10036F732 /* SceneDelegate.swift in Sources */,
+				1674401C240B7F4700DB643F /* ContentSampleView.swift in Sources */,
 				16FCA33524035CF10036F732 /* ContentView.swift in Sources */,
 				16744018240A4E4200DB643F /* Deteil.swift in Sources */,
 				1665E36F2403BD56007AF996 /* UserSettings.swift in Sources */,
