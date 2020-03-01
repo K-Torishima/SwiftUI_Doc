@@ -134,6 +134,13 @@
 			path = 4_ObservableObject;
 			sourceTree = "<group>";
 		};
+		16744019240B7F0600DB643F /* 6 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = 6;
+			sourceTree = "<group>";
+		};
 		16FCA32424035CF10036F732 = {
 			isa = PBXGroup;
 			children = (
@@ -165,6 +172,7 @@
 				1665E36624038A2B007AF996 /* 3 */,
 				1665E3692403B6AB007AF996 /* 4_ObservableObject */,
 				1674400F2407F27400DB643F /* ５ */,
+				16744019240B7F0600DB643F /* 6 */,
 				16FCA33624035CF30036F732 /* Assets.xcassets */,
 				16FCA33B24035CF30036F732 /* LaunchScreen.storyboard */,
 				16FCA33E24035CF30036F732 /* Info.plist */,
