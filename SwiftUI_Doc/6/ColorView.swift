@@ -16,11 +16,6 @@ struct ColorView: View {
             ContentSampleView(chosenColor: $currentColor)
                 .frame(width: 50, height: 770)
                 .offset(x: 0, y: 75)
-            
-            ContentSampleView(chosenColor: $currentColor)
-                .frame(width: 50, height: 770)
-                .offset(x: -100, y: 75)
-            
         }.edgesIgnoringSafeArea(.all)
         
     }
