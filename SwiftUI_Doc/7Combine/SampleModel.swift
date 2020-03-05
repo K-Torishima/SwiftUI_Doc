@@ -4,10 +4,10 @@
 //
 //  Created by 鳥嶋晃次 on 2020/03/05.
 //  Copyright © 2020 koji torishima. All rights reserved.
-//
+// https://github.com/akifumi/mvvm-with-combine-in-swiftui/blob/master/CombineSample/ContentView.swift
 
-import Foundation
 import Combine
+import SwiftUI
 
 final class SampleViewModel: ObservableObject, Identifiable {
     @Published var username: String = ""
@@ -29,7 +29,15 @@ final class SampleViewModel: ObservableObject, Identifiable {
         }
     .eraseToAnyPublisher()
     }
+    
+    struct  StertText {
+        let content: String
+        let color: Color
+        
+    }
+    
+    @Published var status: StertText = StertText(content: "NG", color: .red)
 
-    // https://qiita.com/akifumi1118/items/aa5734b1f14d57072456
+ 
     
 }
