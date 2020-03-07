@@ -37,6 +37,7 @@ final class SampleViewModel: ObservableObject, Identifiable {
     }
     
     @Published var status: StertText = StertText(content: "NG", color: .red)
+    
 
  
     
