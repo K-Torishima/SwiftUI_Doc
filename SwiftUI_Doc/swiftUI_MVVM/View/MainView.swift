@@ -7,16 +7,25 @@
 //
 
 import SwiftUI
+import Combine
 
 struct MainView: View {
-    
+     @EnvironmentObject var session: Session
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+           VStack {
+            if self.session.isLogin {
+                HomeView()
+                    .environmentObject(self.session)
+            } else {
+                LoginView()
+                    .environmentObject(self.session)
+            }
+        }
     }
 }
 
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
-        MainView()
+        MainView().environmentObject(Session())
     }
 }
