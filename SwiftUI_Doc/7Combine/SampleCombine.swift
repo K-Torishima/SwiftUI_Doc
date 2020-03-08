@@ -10,22 +10,32 @@ import SwiftUI
 import Combine
 
 struct SampleCombine: View {
-    @State private var username: String = ""
+    @ObservedObject var viewModel:SampleViewModel
+    
     var body: some View {
         VStack {
-            TextField("Placeholder", text: $username, onEditingChanged: { (changed) in
+            HStack {
+                Text($viewModel.status.wrappedValue.content)
+                    .foregroundColor($viewModel.status.wrappedValue.color)
+                Spacer()
+                
+            }
+            TextField("Pleceholder", text: $viewModel.username, onEditingChanged: { (changed) in
                 print("onEditingChanged: \(changed)")
-            }, onCommit: {
+            }) {
                 print("onCommit")
-            })
+            }
+            
         }
         .padding(.horizontal)
+        .onAppear(perform: viewModel.onApper)
+        .onDisappear(perform: viewModel.onDisapper)
     }
 }
 
 
 struct SampleCombine_Previews: PreviewProvider {
     static var previews: some View {
-        SampleCombine()
+        SampleCombine(viewModel: SampleViewModel())
     }
 }

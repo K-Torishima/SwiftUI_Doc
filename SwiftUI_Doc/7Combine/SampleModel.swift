@@ -6,11 +6,21 @@
 //  Copyright © 2020 koji torishima. All rights reserved.
 // https://github.com/akifumi/mvvm-with-combine-in-swiftui/blob/master/CombineSample/ContentView.swift
 
-import Combine
 import SwiftUI
+import Combine
+
 
 final class SampleViewModel: ObservableObject, Identifiable {
+    
+    struct  StartText {
+        let content: String
+        let color: Color
+        
+    }
+    
+    
     @Published var username: String = ""
+    @Published var status: StartText = StartText(content: "NG", color: .red)
     
     private var validateUsername: AnyPublisher<String?, Never> {
         return $username
@@ -25,20 +35,44 @@ final class SampleViewModel: ObservableObject, Identifiable {
                         
                     }
                 }
-            .eraseToAnyPublisher()
+                .eraseToAnyPublisher()
         }
-    .eraseToAnyPublisher()
+        .eraseToAnyPublisher()
     }
     
-    struct  StertText {
-        let content: String
-        let color: Color
+    private var cancellbles: [AnyCancellable] = []
+    
+    private(set) lazy var onApper:() -> Void = { [weak self] in
+        guard let self = self else { return }
+        self.validateUsername
+            .sink(receiveValue: {[weak self] (value) in
+                if let value = value {
+                    self?.username = value
+                } else {
+                    print("validateUsername.receveValue: Invalid username")
+                }
+            })
+            .store(in: &self.cancellbles)
+        
+        self.validateUsername
+            .map {(value) -> StartText in
+                if let _ = value {
+                    return StartText(content: "OK", color: .green)
+                } else {
+                    return StartText(content: "NG", color: .red)
+                }
+        }
+        .sink(receiveValue: { [weak self] (value) in
+            self?.status = value
+            
+        })
+            .store(in: &self.cancellbles)
         
     }
     
-    @Published var status: StertText = StertText(content: "NG", color: .red)
-    
-
- 
-    
+    private(set) lazy var onDisapper: () -> Void = { [weak self] in
+        guard let self = self else { return }
+        self.cancellbles.forEach { $0.cancel() }
+        self.cancellbles = []
+    }
 }
