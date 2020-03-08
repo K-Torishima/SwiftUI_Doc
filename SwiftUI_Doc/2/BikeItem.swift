@@ -30,7 +30,7 @@ struct BikeItem: View {
 struct BikeItem_Previews: PreviewProvider {
     static var previews: some View {
         ForEach(ContentSizeCategory.allCases, id: \.self) { category in
-            BikeItem(bike: bikes[5])
+            BikeItem(bike: bikes[0])
                 .previewLayout(.sizeThatFits)
                 .environment(\.sizeCategory, category)
             .previewDisplayName("\(category)")
