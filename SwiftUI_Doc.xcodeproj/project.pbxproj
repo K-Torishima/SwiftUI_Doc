@@ -18,6 +18,7 @@
 		16744018240A4E4200DB643F /* Deteil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16744017240A4E4200DB643F /* Deteil.swift */; };
 		1674401C240B7F4700DB643F /* ContentSampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1674401B240B7F4700DB643F /* ContentSampleView.swift */; };
 		16744020240B90A500DB643F /* ColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1674401F240B90A500DB643F /* ColorView.swift */; };
+		16B8ABE524167A010083FD09 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B8ABE424167A010083FD09 /* Event.swift */; };
 		16CB048E24153AC800ADBA70 /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CB048D24153AC800ADBA70 /* Example.swift */; };
 		16DD04B7241260B700C1B85C /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DD04B6241260B700C1B85C /* SwiftUIView.swift */; };
 		16DD04BA2414D8E900C1B85C /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DD04B92414D8E900C1B85C /* MainView.swift */; };
@@ -74,6 +75,7 @@
 		16744017240A4E4200DB643F /* Deteil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deteil.swift; sourceTree = "<group>"; };
 		1674401B240B7F4700DB643F /* ContentSampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentSampleView.swift; sourceTree = "<group>"; };
 		1674401F240B90A500DB643F /* ColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorView.swift; sourceTree = "<group>"; };
+		16B8ABE424167A010083FD09 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		16CB048D24153AC800ADBA70 /* Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
 		16DD04B6241260B700C1B85C /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		16DD04B92414D8E900C1B85C /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -174,9 +176,18 @@
 			path = 6;
 			sourceTree = "<group>";
 		};
+		16B8ABE3241679E10083FD09 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				16B8ABE424167A010083FD09 /* Event.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		16CB048C24153A1A00ADBA70 /* URLSessionWithSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				16B8ABE3241679E10083FD09 /* Model */,
 				16CB048D24153AC800ADBA70 /* Example.swift */,
 			);
 			path = URLSessionWithSwiftUI;
@@ -458,6 +469,7 @@
 				16DD04C82414D98400C1B85C /* User.swift in Sources */,
 				16FCA3662403735C0036F732 /* BikeModel.swift in Sources */,
 				1665E3712403BF04007AF996 /* TestView.swift in Sources */,
+				16B8ABE524167A010083FD09 /* Event.swift in Sources */,
 				167440122407F2B800DB643F /* TestSampleView.swift in Sources */,
 				16DD04BA2414D8E900C1B85C /* MainView.swift in Sources */,
 				16744020240B90A500DB643F /* ColorView.swift in Sources */,
