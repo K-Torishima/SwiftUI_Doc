@@ -30,6 +30,12 @@
 		16DD04CA2414D99B00C1B85C /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DD04C92414D99B00C1B85C /* LoginViewModel.swift */; };
 		16DD04CC2414D9C900C1B85C /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DD04CB2414D9C900C1B85C /* HomeViewModel.swift */; };
 		16DD04CE2415207000C1B85C /* AuthProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DD04CD2415207000C1B85C /* AuthProviderProtocol.swift */; };
+		16F60AFC24167FA700772B9D /* StudyGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F60AFB24167FA700772B9D /* StudyGroup.swift */; };
+		16F60AFF2416805000772B9D /* StudyGroupDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F60AFE2416805000772B9D /* StudyGroupDateFormatter.swift */; };
+		16F60B012416806500772B9D /* StudyGroupEventFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F60B002416806500772B9D /* StudyGroupEventFetcher.swift */; };
+		16F60B042416841500772B9D /* TopListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F60B032416841500772B9D /* TopListViewModel.swift */; };
+		16F60B15241685F800772B9D /* EventDetailPartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F60B14241685F800772B9D /* EventDetailPartView.swift */; };
+		16F60B172416860A00772B9D /* EventDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F60B162416860A00772B9D /* EventDetailView.swift */; };
 		16FCA33124035CF10036F732 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FCA33024035CF10036F732 /* AppDelegate.swift */; };
 		16FCA33324035CF10036F732 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FCA33224035CF10036F732 /* SceneDelegate.swift */; };
 		16FCA33524035CF10036F732 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FCA33424035CF10036F732 /* ContentView.swift */; };
@@ -87,6 +93,12 @@
 		16DD04C92414D99B00C1B85C /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		16DD04CB2414D9C900C1B85C /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		16DD04CD2415207000C1B85C /* AuthProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthProviderProtocol.swift; sourceTree = "<group>"; };
+		16F60AFB24167FA700772B9D /* StudyGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyGroup.swift; sourceTree = "<group>"; };
+		16F60AFE2416805000772B9D /* StudyGroupDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyGroupDateFormatter.swift; sourceTree = "<group>"; };
+		16F60B002416806500772B9D /* StudyGroupEventFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyGroupEventFetcher.swift; sourceTree = "<group>"; };
+		16F60B032416841500772B9D /* TopListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopListViewModel.swift; sourceTree = "<group>"; };
+		16F60B14241685F800772B9D /* EventDetailPartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailPartView.swift; sourceTree = "<group>"; };
+		16F60B162416860A00772B9D /* EventDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailView.swift; sourceTree = "<group>"; };
 		16FCA32D24035CF10036F732 /* SwiftUI_Doc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUI_Doc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16FCA33024035CF10036F732 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		16FCA33224035CF10036F732 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -180,6 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				16B8ABE424167A010083FD09 /* Event.swift */,
+				16F60AFB24167FA700772B9D /* StudyGroup.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -187,8 +200,11 @@
 		16CB048C24153A1A00ADBA70 /* URLSessionWithSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				16B8ABE3241679E10083FD09 /* Model */,
 				16CB048D24153AC800ADBA70 /* Example.swift */,
+				16B8ABE3241679E10083FD09 /* Model */,
+				16F60AFD2416802A00772B9D /* Other */,
+				16F60B072416850E00772B9D /* Views */,
+				16F60B02241683F500772B9D /* ViewModel */,
 			);
 			path = URLSessionWithSwiftUI;
 			sourceTree = "<group>";
@@ -231,6 +247,64 @@
 				16DD04CB2414D9C900C1B85C /* HomeViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		16F60AFD2416802A00772B9D /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				16F60AFE2416805000772B9D /* StudyGroupDateFormatter.swift */,
+				16F60B002416806500772B9D /* StudyGroupEventFetcher.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		16F60B02241683F500772B9D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				16F60B032416841500772B9D /* TopListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		16F60B072416850E00772B9D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				16F60B13241685AC00772B9D /* EventDetaill */,
+				16F60B12241685A900772B9D /* Map */,
+				16F60B11241685A600772B9D /* Safari */,
+				16F60B10241685A300772B9D /* TopEventList */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		16F60B10241685A300772B9D /* TopEventList */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TopEventList;
+			sourceTree = "<group>";
+		};
+		16F60B11241685A600772B9D /* Safari */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Safari;
+			sourceTree = "<group>";
+		};
+		16F60B12241685A900772B9D /* Map */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		16F60B13241685AC00772B9D /* EventDetaill */ = {
+			isa = PBXGroup;
+			children = (
+				16F60B14241685F800772B9D /* EventDetailPartView.swift */,
+				16F60B162416860A00772B9D /* EventDetailView.swift */,
+			);
+			path = EventDetaill;
 			sourceTree = "<group>";
 		};
 		16FCA32424035CF10036F732 = {
@@ -463,7 +537,9 @@
 			files = (
 				4B0893262410060F0097110E /* SampleCombine.swift in Sources */,
 				16FCA36A240381F80036F732 /* BikeDetail.swift in Sources */,
+				16F60B15241685F800772B9D /* EventDetailPartView.swift in Sources */,
 				1665E3682403A296007AF996 /* SampleToggle.swift in Sources */,
+				16F60AFC24167FA700772B9D /* StudyGroup.swift in Sources */,
 				1665E36B2403B6DD007AF996 /* LikeViewModel.swift in Sources */,
 				16DD04BC2414D8FF00C1B85C /* LoginView.swift in Sources */,
 				16DD04C82414D98400C1B85C /* User.swift in Sources */,
@@ -473,11 +549,14 @@
 				167440122407F2B800DB643F /* TestSampleView.swift in Sources */,
 				16DD04BA2414D8E900C1B85C /* MainView.swift in Sources */,
 				16744020240B90A500DB643F /* ColorView.swift in Sources */,
+				16F60B012416806500772B9D /* StudyGroupEventFetcher.swift in Sources */,
 				16FCA36824037BA30036F732 /* BikeItem.swift in Sources */,
+				16F60AFF2416805000772B9D /* StudyGroupDateFormatter.swift in Sources */,
 				16FCA362240370CD0036F732 /* SampleView.swift in Sources */,
 				16DD04B7241260B700C1B85C /* SwiftUIView.swift in Sources */,
 				16FCA33124035CF10036F732 /* AppDelegate.swift in Sources */,
 				16DD04CC2414D9C900C1B85C /* HomeViewModel.swift in Sources */,
+				16F60B042416841500772B9D /* TopListViewModel.swift in Sources */,
 				4B1BEE50241008180014BBBB /* SampleModel.swift in Sources */,
 				16744016240A32E800DB643F /* BoxView.swift in Sources */,
 				1665E3732403C64E007AF996 /* SettingView.swift in Sources */,
@@ -486,6 +565,7 @@
 				16DD04CE2415207000C1B85C /* AuthProviderProtocol.swift in Sources */,
 				16DD04C62414D97A00C1B85C /* AuthProvider.swift in Sources */,
 				16DD04CA2414D99B00C1B85C /* LoginViewModel.swift in Sources */,
+				16F60B172416860A00772B9D /* EventDetailView.swift in Sources */,
 				16FCA33324035CF10036F732 /* SceneDelegate.swift in Sources */,
 				1674401C240B7F4700DB643F /* ContentSampleView.swift in Sources */,
 				16FCA33524035CF10036F732 /* ContentView.swift in Sources */,
