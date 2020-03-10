@@ -9,7 +9,7 @@
 import Foundation
 
 class StudyGroupEventFetcher {
-    private let urlLink = "https://connpass.com/api/v1/event/?keyword=YUMEMI.swift"
+    private let urlLink = "https://connpass.com/api/v1/event/?keyword=YUMEMI"
     
     func fetchEventData(completion:@escaping ([Event]) -> Void) {
         URLSession.shared.dataTask(with: URL(string: urlLink)!) { (data, response, error) in
@@ -19,7 +19,6 @@ class StudyGroupEventFetcher {
                 let searchResultData = try decoder.decode(StudyGroup.self, from: data)
                 DispatchQueue.main.async {
                     completion(searchResultData.events.reversed())
-                    
                 }
             } catch {
                 print("json convert failed in JSONDecoder. " + error.localizedDescription)

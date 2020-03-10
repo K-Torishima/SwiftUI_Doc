@@ -24,7 +24,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 //        let contentView = TestView(bikes: bikes).environmentObject(settings)
   //       let contentView = TestSampleView(motos: motos)
  //       let contentView = ColorView()
-        let contentView = MainView()
+        let contentView = TopListView()
         
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)

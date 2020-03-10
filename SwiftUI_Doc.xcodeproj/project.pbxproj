@@ -36,6 +36,10 @@
 		16F60B042416841500772B9D /* TopListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F60B032416841500772B9D /* TopListViewModel.swift */; };
 		16F60B15241685F800772B9D /* EventDetailPartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F60B14241685F800772B9D /* EventDetailPartView.swift */; };
 		16F60B172416860A00772B9D /* EventDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F60B162416860A00772B9D /* EventDetailView.swift */; };
+		16F60B19241772FD00772B9D /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F60B18241772FD00772B9D /* Map.swift */; };
+		16F60B1B2417CEDB00772B9D /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F60B1A2417CEDB00772B9D /* SafariView.swift */; };
+		16F60B1D2417D03200772B9D /* TopListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F60B1C2417D03200772B9D /* TopListView.swift */; };
+		16F60B1F2417D04800772B9D /* EventRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F60B1E2417D04800772B9D /* EventRowView.swift */; };
 		16FCA33124035CF10036F732 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FCA33024035CF10036F732 /* AppDelegate.swift */; };
 		16FCA33324035CF10036F732 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FCA33224035CF10036F732 /* SceneDelegate.swift */; };
 		16FCA33524035CF10036F732 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FCA33424035CF10036F732 /* ContentView.swift */; };
@@ -99,6 +103,10 @@
 		16F60B032416841500772B9D /* TopListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopListViewModel.swift; sourceTree = "<group>"; };
 		16F60B14241685F800772B9D /* EventDetailPartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailPartView.swift; sourceTree = "<group>"; };
 		16F60B162416860A00772B9D /* EventDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailView.swift; sourceTree = "<group>"; };
+		16F60B18241772FD00772B9D /* Map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
+		16F60B1A2417CEDB00772B9D /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
+		16F60B1C2417D03200772B9D /* TopListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopListView.swift; sourceTree = "<group>"; };
+		16F60B1E2417D04800772B9D /* EventRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventRowView.swift; sourceTree = "<group>"; };
 		16FCA32D24035CF10036F732 /* SwiftUI_Doc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUI_Doc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16FCA33024035CF10036F732 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		16FCA33224035CF10036F732 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -280,6 +288,8 @@
 		16F60B10241685A300772B9D /* TopEventList */ = {
 			isa = PBXGroup;
 			children = (
+				16F60B1C2417D03200772B9D /* TopListView.swift */,
+				16F60B1E2417D04800772B9D /* EventRowView.swift */,
 			);
 			path = TopEventList;
 			sourceTree = "<group>";
@@ -287,6 +297,7 @@
 		16F60B11241685A600772B9D /* Safari */ = {
 			isa = PBXGroup;
 			children = (
+				16F60B1A2417CEDB00772B9D /* SafariView.swift */,
 			);
 			path = Safari;
 			sourceTree = "<group>";
@@ -294,6 +305,7 @@
 		16F60B12241685A900772B9D /* Map */ = {
 			isa = PBXGroup;
 			children = (
+				16F60B18241772FD00772B9D /* Map.swift */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -539,6 +551,7 @@
 				16FCA36A240381F80036F732 /* BikeDetail.swift in Sources */,
 				16F60B15241685F800772B9D /* EventDetailPartView.swift in Sources */,
 				1665E3682403A296007AF996 /* SampleToggle.swift in Sources */,
+				16F60B1B2417CEDB00772B9D /* SafariView.swift in Sources */,
 				16F60AFC24167FA700772B9D /* StudyGroup.swift in Sources */,
 				1665E36B2403B6DD007AF996 /* LikeViewModel.swift in Sources */,
 				16DD04BC2414D8FF00C1B85C /* LoginView.swift in Sources */,
@@ -557,17 +570,20 @@
 				16FCA33124035CF10036F732 /* AppDelegate.swift in Sources */,
 				16DD04CC2414D9C900C1B85C /* HomeViewModel.swift in Sources */,
 				16F60B042416841500772B9D /* TopListViewModel.swift in Sources */,
+				16F60B1D2417D03200772B9D /* TopListView.swift in Sources */,
 				4B1BEE50241008180014BBBB /* SampleModel.swift in Sources */,
 				16744016240A32E800DB643F /* BoxView.swift in Sources */,
 				1665E3732403C64E007AF996 /* SettingView.swift in Sources */,
 				1665E36D2403B7EF007AF996 /* LikeView.swift in Sources */,
 				16CB048E24153AC800ADBA70 /* Example.swift in Sources */,
 				16DD04CE2415207000C1B85C /* AuthProviderProtocol.swift in Sources */,
+				16F60B19241772FD00772B9D /* Map.swift in Sources */,
 				16DD04C62414D97A00C1B85C /* AuthProvider.swift in Sources */,
 				16DD04CA2414D99B00C1B85C /* LoginViewModel.swift in Sources */,
 				16F60B172416860A00772B9D /* EventDetailView.swift in Sources */,
 				16FCA33324035CF10036F732 /* SceneDelegate.swift in Sources */,
 				1674401C240B7F4700DB643F /* ContentSampleView.swift in Sources */,
+				16F60B1F2417D04800772B9D /* EventRowView.swift in Sources */,
 				16FCA33524035CF10036F732 /* ContentView.swift in Sources */,
 				16DD04BE2414D90B00C1B85C /* HomeView.swift in Sources */,
 				16DD04C42414D96800C1B85C /* session.swift in Sources */,
